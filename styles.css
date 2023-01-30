@@ -13,12 +13,20 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 8px;
 }
 
 a {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
+}
+
+button {
+    background-color: #3882f6;
+    border-radius: 5px;
+    color: white;
 }
 
 .hero, .footer {
@@ -28,11 +36,29 @@ a {
 
 .hero {
     flex-direction: column;
+    padding: 32px;
 }
 
 .header {
     font-size: 24px;
     color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-container {
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    justify-content: space-between;
 }
 
 .footer {
@@ -40,4 +66,48 @@ a {
     align-items: center;
     color: #e5e7eb;
     padding: 24px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 32px;
+}
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+    gap: 32px;
+    margin: 32px;
+}
+
+.card {
+    width: 200px;
+}
+
+.card-image {
+    border: solid 3px blue;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.third-container {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.quote-text {
+    font: 36px light;
+}
+
+.quote-author {
+    display: flex;
+    align-self: flex-end;
 }
